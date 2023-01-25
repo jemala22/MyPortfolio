@@ -22,6 +22,7 @@ $(document).ready(function(){
       } // End if
     });
   });
+
 // Get the loading element
 var loading = document.getElementById("loading");
 // Get the content element
@@ -36,3 +37,17 @@ window.addEventListener("load", function() {
     content.style.display = "block";
   }, 1500);
 });
+
+var links = document.querySelectorAll(".link");
+links.forEach(function(link) {
+  link.addEventListener("click", function(event) {
+    event.preventDefault();
+    var content = link.nextElementSibling;
+    var allContent = document.querySelectorAll(".content");
+    allContent.forEach(function(c) {
+      c.style.display = "none";
+    });
+    content.style.display = "block";
+  });
+});
+

@@ -162,8 +162,19 @@ h4
     transform: rotate(360deg);
   }
 }
-
 #content {
   display: none; /* hide the content by default */
 }
 
+.content{
+  display: none;
+}
+#experience li{
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+}
+#experience li a{
+  text-decoration: none;
+  color: #3498db;
+  font-size: 150%;
+}
