@@ -17,6 +17,40 @@ body
     align-items: center;
     justify-content: center;
 }
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 12;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  margin-right: auto;
+  margin-top: 2vh;
+  margin-left: 2vh;
+  cursor: pointer;
+}
+.navbar a {
+  padding-right: 10px;
+  margin-left: 10px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #47B5FF;
+  text-transform: capitalize;
+}
+.navbar a:hover {
+  color: white;
+  background-color: #06283D;
+  transition: 0.5s;
+}
 .calculator
 {
     background-color: #1F8A70;
