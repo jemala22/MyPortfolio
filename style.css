@@ -9,7 +9,7 @@ body
 nav {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 12;
 }
 
 /* Styling for the navigation bar */
@@ -100,4 +100,34 @@ h4
 .different-color
 {
     color: gray;
+    font-family: 'Aboreto', cursive;
+}
+#image-links {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 10;
+}
+
+#image-links img {
+  width: 100%;
+}
+#image-links li
+{
+  list-style: none;
+}
+#email-link {
+  position: fixed;
+ bottom: 0;
+  right: 0;
+  padding: 10px; /* Add some padding for visibility */
+  display: flex;
+  align-items: flex-end;
+}
+#email-link a
+{
+  text-decoration: none;
+  color:#1F8A70;
+  font-size: 1.3em;
 }
