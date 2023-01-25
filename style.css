@@ -12,7 +12,6 @@ nav {
     z-index: 12;
 }
 
-/* Styling for the navigation bar */
 .navbar {
     display: flex;
     align-items: center;
@@ -20,7 +19,6 @@ nav {
     
   }
   
-  /* Styling for the logo */
   .logo {
     width: 70px;
     height: 70px;
@@ -29,8 +27,6 @@ nav {
     margin-left: 2vh;
     cursor: pointer;
   }
-  
-  /* Styling for the navigation links */
 .navbar a {
     padding-right: 10px;
     margin-left: 10px;
@@ -44,20 +40,14 @@ nav {
     background-color: #06283D;
     transition: 0.5s;
 }
-  
-  
-  /*Styling for sections */
   section{
-    padding: 50px;
+    padding: 20px;
     margin-left: 10%;
     margin-top: 10%;
     height: 100vh;    
     text-align: left;
     
 }
-
-
-  
   .project-cards {
     display: flex;
     flex-wrap: wrap;
@@ -121,7 +111,7 @@ h4
   position: fixed;
  bottom: 0;
   right: 0;
-  padding: 10px; /* Add some padding for visibility */
+  padding: 10px; 
   display: flex;
   align-items: flex-end;
 }
@@ -135,14 +125,14 @@ h4
   width: 40px;
   height: 40px;
   border-bottom: 4px solid #1F8A70;
-  border-top: 4px solid #3498db; /* The color of the top border */
+  border-top: 4px solid #3498db;
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none; /* hide the loading animation by default */
+  display: none; 
 }
 
 @keyframes spin {
@@ -163,7 +153,7 @@ h4
   }
 }
 #content {
-  display: none; /* hide the content by default */
+  display: none;
 }
 
 .content{
@@ -177,4 +167,7 @@ h4
   text-decoration: none;
   color: #3498db;
   font-size: 150%;
+}
+#work h1{
+  color:#3498db;
 }
