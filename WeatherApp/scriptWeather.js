@@ -2,7 +2,7 @@ const apiKey = 'f2bf4e7c084a72ece54b98729f2b5cf1'; // replace with your own API 
 
 function getWeather() {
    const city = document.getElementById('city-input').value;
-   fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
+   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
      .then(response => response.json())
       .then(data => {
         const temperature = data.main.temp;
