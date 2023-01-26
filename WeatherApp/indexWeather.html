@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <link rel="shortcut icon" href="../Assets/Favicon_Blue.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styleWeather.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div id="loading"></div>
+   <div id="content">
+    <nav class="navbar">
+        <img src="../Assets/Favicon_Blue.ico" alt="website logo" class="logo">
+        <a href="../index.html">Home</a>
+      </nav>
+    <div class="input-field">
+        <input type="text" id="city-input" placeholder="Enter city name" style="text-transform:capitalize">
+        <button id="btn" onclick="getWeather()">Get Weather</button>
+    </div>
+    <div id="display">
+         <div id="temperature"></div>
+         <div id="sunrise"></div>
+         <div id="sunset"></div>
+    </div>  
+      <div id="email-link">
+        <a href="mailto:bitsadzegiorgi9@gmail.com">bitsadzegiorgi9@gmail.com</a>
+      </div>
+   </div>
+    <script src="./scriptWeather.js"></script>
+</body>
+</html>
