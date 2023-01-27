@@ -41,9 +41,7 @@ nav {
     transition: 0.5s;
 }
   section{
-    padding: 20px;
     margin-left: 10%;
-    margin-top: 10%;
     height: 100vh;    
     text-align: left;
     
@@ -120,7 +118,7 @@ h4
 {
   text-decoration: none;
   color:#1F8A70;
-  font-size: 1.3em;
+  font-size: 1.8em;
 }
 #loading {
   width: 40px;

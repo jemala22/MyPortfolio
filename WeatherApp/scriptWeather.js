@@ -8,12 +8,13 @@ function getWeather() {
         const temperature = data.main.temp;
         const sunrise = data.sys.sunrise;
         const sunset = data.sys.sunset;
- 		// display temperature in celsius
- 		document.getElementById('temperature').innerHTML ='Temerature ' + kelvinToCelsius(temperature).toFixed(1) + '&#8451;';
+ 		    // display temperature in celsius
+ 		    document.getElementById('temperature').innerHTML ='Temerature ' + kelvinToCelsius(temperature).toFixed(1) + '&#8451;';
         // display sunrise
         document.getElementById('sunrise').innerHTML ='Sunrise ' + new Date(sunrise * 1000).toLocaleTimeString();
         // display sunset
         document.getElementById('sunset').innerHTML ='Sunset ' + new Date(sunset * 1000).toLocaleTimeString();
+
 	})
 	.catch(error => console.log(error));
 }
@@ -44,3 +45,21 @@ window.addEventListener("load", function() {
     content.style.display = "block";
   }, 1500);
 });
+function getTbilisiWeather() {
+  const city ="tbilisi"
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
+    .then(response => response.json())
+     .then(data => {
+       const temperature = data.main.temp;
+       const sunrise = data.sys.sunrise;
+       const sunset = data.sys.sunset;
+        // display temperature in celsius
+        document.getElementById('tbilisi-temperature').innerHTML ='Temerature ' + kelvinToCelsius(temperature).toFixed(1) + '&#8451;';
+       // display sunrise
+       document.getElementById('tbilisi-sunrise').innerHTML ='Sunrise ' + new Date(sunrise * 1000).toLocaleTimeString();
+       // display sunset
+       document.getElementById('tbilisi-sunset').innerHTML ='Sunset ' + new Date(sunset * 1000).toLocaleTimeString();
+
+ })
+ .catch(error => console.log(error));
+}

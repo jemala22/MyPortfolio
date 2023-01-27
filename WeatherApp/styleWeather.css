@@ -31,13 +31,13 @@ input, #temperature, #sunrise, #sunset {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 15vh;
 }
 
 #display
 {
     margin-top: -15vh;
     min-height: 20vh;
+    margin-left: -15vh;
 }
 #btn, #city-input
 {
